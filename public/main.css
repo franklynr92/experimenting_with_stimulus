@@ -2,10 +2,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
-.clipboard-button {
+/* .clipboard-button {
   display: none;
-}
+} */
 
-.clipboard--suported .clipboard-button{
+.clipboard--suported .clipboard-button {
   display: initial;
 }
+

@@ -9,8 +9,16 @@
   <div data-controller="clipboard"> 
     Pin: <input data-target="clipboard.source" type="text" value="1234" readonly>
     <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>  
-    <!--click-> has been ommitted from the action descriptor because it is a default event for actions on button elements-->
   </div>
+  <div data-controller="clipboard">
+    PIN: <input data-target="clipboard.source" type="text" value="3737" readonly>
+    <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
+  </div>
+  <div data-controller="clipboard">
+    PIN: <textarea data-target="clipboard.source" readonly>3737</textarea>
+    <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
+  </div>
+  <!--click-> has been ommitted from the action descriptor because it is a default event for actions on button elements-->
   <!-- <div data-controller="hello">
     <input data-target="hello.name" type="text">
     <button data-action="click->hello#greet">Greet</button>
