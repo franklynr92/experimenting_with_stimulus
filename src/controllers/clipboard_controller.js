@@ -10,6 +10,7 @@ export default class extends Controller {
     //this.hasSourceTarget evaluates to true if there is a source target or falase if not.
     static targets = [ "source" ]
     copy() {
-
+        this.sourceTarget.select()
+        document.execCommand("copy")
     }
 }
