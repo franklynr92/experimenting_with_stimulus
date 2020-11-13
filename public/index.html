@@ -6,6 +6,8 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
+  <div data-controller="content-loader"
+     data-content-loader-url="/messages.html"></div>
   <!-- <div data-controller="clipboard"> 
     Pin: <input data-target="clipboard.source" type="text" value="1234" readonly>
     <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>  
@@ -18,7 +20,7 @@
     PIN: <textarea data-target="clipboard.source" readonly>3737</textarea>
     <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
   </div> -->
-  <div data-controller="slideshow">
+  <!-- <div data-controller="slideshow" data-slideshow-index="3">
     <button data-action="slideshow#previous">←</button>
     <button data-action="slideshow#next">→</button>
 
@@ -26,7 +28,7 @@
     <div data-target="slideshow.slide" class="slide">🙈</div>
     <div data-target="slideshow.slide" class="slide">🙉</div>
     <div data-target="slideshow.slide" class="slide">🙊</div>
-  </div>
+  </div> -->
   <!--click-> has been ommitted from the action descriptor because it is a default event for actions on button elements-->
   <!-- <div data-controller="hello">
     <input data-target="hello.name" type="text">
